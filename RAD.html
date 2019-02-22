@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box}
+    #naslov{background-color: aqua;text-align: center;height: 30px;font-size: 2em;}
+    #pravilo{background-color: blueviolet; text-align: center;height: 30px; font-size:  2em;}
+    #tabla{background-color: blue; display: grid;grid-gap: 15px; grid-template-columns: repeat(5,100px);grid-template-rows: repeat(4,100px);}
+    #tabla div{border: 1px solid white; position:relative;}
+    #nigra{background-color: aqua;height: 30px;}
+    .front{position:absolute;height: 100%;width: 100%;}
+    .back{position:absolute;height: 100%;width: 100%;}
+    </style>
+</head>
+
+<body>
+<div id="naslov">Igra memorije</div>
+<div id="pravilo">Kliknite na kartu da pronadjete dve iste slike</div>
+<div id="tabla">
+    <div >
+        <img class="front" src="lav.jpg" alt="lav">
+        <img class ="back" src="pozadina.jpg" alt="pozadina">
+      
+    </div>
+    <div >
+        <img class="front"src="lav.jpg" alt="lav">
+        <img class="back"src="pozadina.jpg" alt="pozadina">
+       
+       
+    </div>
+    <div>
+        <img class="front" src="leopard.jpg" alt="leopard">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+       
+    </div>
+    <div>
+        <img class="front" src="leopard.jpg" alt="leopard">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+        
+    </div>
+    <div>
+        <img class="front"src="jez.jpg" alt="jez">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+    </div>
+    <div>
+        <img class="front" src="jez.jpg" alt="jez">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+        
+    </div>
+    <div>
+       <img class="front" src="vuk.jpg" alt="vuk">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+      
+       
+    </div>
+    <div>
+        <img class="front" src="vuk.jpg" alt="vuk">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+       
+    </div>
+    <div>
+        <img class="front" src="veverica.jpg" alt="veverica">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+        
+    </div>
+    <div>
+        <img  class="front" src="veverica.jpg" alt="vevrica">
+        <img  class="back" src="pozadina.jpg" alt="pozadina">
+       
+       
+    </div>
+    <div>
+        <img class="front" src="zec.png" alt="zec">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+        
+        
+    </div>
+    <div>
+        <img class="front" src="zec.png" alt="zec">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="lisica.jpg" alt="lisica">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="lisica.jpg" alt="lisica">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="slon.jpg" alt="slon">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="slon.jpg" alt="slon">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="koala.jpg" alt="koala">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="koala.jpg" alt="koala">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front"  src="medved.jpg" alt="medved">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+    <div>
+        <img class="front" src="medved.jpg" alt="medved">
+        <img class="back" src="pozadina.jpg" alt="pozadina">
+    </div>
+</div>
+<div id="nigra">Nova igra
+    <span >vreme</span>
+</div>
+
+    <body>
+        <script>
+        function okreniKartu(){
+            var backs = document.getElementsByClassName("back");
+            var fronts = document.getElementsByClassName("front");
+            for(let i=0;i<backs.length;i++){
+                backs[i].addEventListener("click", function(){
+                this.style.display="none";
+                })
+                fronts[i].addEventListener("click", function(){
+                    backs[i].style.display="block";
+                })
+            }
+        }
+        okreniKartu();
+
+    var slike = [];
+    function pocniIgru(){
+        
+        var fronts = document.getElementsByClassName("front");
+        //slike = [];
+        for (let i = 0; i < fronts.length; i++) 
+        slike.push(fronts[i].src);
+        //var pon={};
+        for (let i = 0; i < fronts.length; i++) {
+         var j=Math.floor(Math.random()*fronts.length)
+         var p=slike[i];
+         slike[i]=slike[j];
+         slike[j]=p;
+        }
+        for (let i = 0; i < fronts.length; i++) 
+            fronts[i].src = slike[i];
+             
+    }
+    pocniIgru();
+    
+    
+        
+        </script>
+        
+
+    </body>
+    
+</body>
+</html>
