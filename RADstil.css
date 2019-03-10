@@ -1,0 +1,57 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color:rgb(95, 236, 236);
+    }
+
+    #naslov {
+        background-color:rgb(96, 178, 250);
+        text-align: center;
+        height: 40px;
+        font-size: 2em;
+    }
+
+    #pravilo {
+        background-color:rgb(0, 255, 221);
+        text-align: center;
+        height: 40px;
+        font-size: 2em;
+    }
+
+    #tabla {
+        background-color:rgba(33, 154, 202, 0.979);
+        display: grid;
+        width: 560px;
+        margin: 0 auto;
+        grid-gap: 15px;
+        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+
+    #tabla div {
+        
+        border: 1px solid white;
+        position: relative;
+    }
+
+    #nigra {
+        background-color:rgb(96, 178, 250);
+        height: 40px;
+        font-size: 1.5em;
+    }
+
+    .front {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    #vreme {background-color:aquamarine;font-size: 1.2em;}
