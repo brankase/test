@@ -1,0 +1,135 @@
+@font-face{
+    font-family: 'Great Vibes';
+    src: url(GreatVibes-Regular.ttf);
+}
+* {
+margin: 0;
+padding: 0;
+} 
+body{
+    font-family: 'Raleway',sans-serif;
+}
+header.wrapper, section.wrapper{
+margin: 0 auto;
+width: 100%;
+background-color: #f0bded;
+    
+} 
+header{
+    height: 95px;
+}
+header img{
+    padding-top: 3px;
+    margin-left: 10px;
+
+}
+nav{
+    float: right;
+}
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+} 
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 36px;
+    margin-right: 102px
+}
+nav ul li a {
+    text-decoration: none;
+    color:#d18377;
+    font-family: 'Raleway' , sans-serif;
+
+}
+nav ul li a:hover{
+    color: #70888a;
+    border-bottom: 1px solid #70888a;
+
+}
+li :last-child{
+    margin-right: 20px;
+}
+
+.naslov{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #d18377;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    background-color: hsl(305, 79%, 77%);
+    
+}
+
+#cover{
+    width: 20%;
+    padding-left: 12%;
+}
+.iskustva{
+    padding: 20px 0 0 0;
+    background: linear-gradient(to bottom, #ebe0e8 0%,#f0bded 0%,#dfb2df 46%,rgb(229, 153, 210) 30%,#f0c6e7e5 99%);
+    color: hsl(345, 42%, 44%);
+    
+}
+.iskustva p{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #d18377;
+    font-size: 40px;
+}
+.is{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    border: 2px solid rgb(229, 153, 210);
+    border-radius: 20px;
+    margin-top: 3px;
+    
+}
+.is p {
+    font-size: 30px;
+}
+.fo{
+    padding: 25px 0 0 0;
+}
+.is a{
+    color: #70888a;
+    font-size: 12px;
+    font-family: 'Raleway',sans-serif;
+    display: block;
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+#submit{
+    margin: 10px 10px 10px 0;
+    padding: 5px;
+    text-transform: uppercase;
+}
+#submit:hover{
+    background-color: rgb(207, 36, 223);
+}
+footer{
+    height: 60px;
+    background-color: #70888a;
+    width: 100%;
+    clear: both;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 23px;
+    font-family: 'Arial', sans-serif;
+}
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}

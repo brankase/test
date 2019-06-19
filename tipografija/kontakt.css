@@ -1,0 +1,122 @@
+@font-face{
+    font-family: 'Great Vibes';
+    src: url(GreatVibes-Regular.ttf);
+}
+* {
+margin: 0;
+padding: 0;
+} 
+body{
+    font-family: 'Raleway',sans-serif;
+}
+header.wrapper, section.wrapper{
+margin: 0 auto;
+width: 1200px;
+    
+} 
+header{
+    height: 95px;
+}
+header img{
+    padding-top: 3px;
+    margin-left: 10px;
+
+}
+nav{
+    float: right;
+}
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+} 
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 36px;
+    margin-right: 102px
+}
+nav ul li a {
+    text-decoration: none;
+    color:#d18377;
+    font-family: 'Raleway' , sans-serif;
+
+}
+nav ul li a:hover{
+    color: #70888a;
+    border-bottom: 1px solid #70888a;
+
+}
+li :last-child{
+    margin-right: 20px;
+}
+
+.naslov{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    color: #d18377;
+    margin-top: 72px;
+    margin-bottom: 76px;
+    font-weight: normal;
+}
+label{
+    display: block;
+    padding: 10px 20px;
+}
+input{
+    margin: 0 0 15px 20px;
+}
+textarea{
+    margin:0 0 20px 20px;
+}
+progress{
+    margin: 0 0 15px 20px;
+}
+meter{
+    margin: 0 015px 20px;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+#submit, #reset{
+    margin: 10px 10px 50px 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#submit:hover{
+    background-color: #0f0;
+}
+#reset:hover{
+    background-color: #f00;
+
+}
+legend{
+    font-weight: bold;
+    font-size: 25px;
+}
+fieldset{
+    border: 3px dotted #d18377;
+}
+
+
+footer{
+    height: 60px;
+    background-color: #70888a;
+    width: 100%;
+    clear: both;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 23px;
+    font-family: 'Arial', sans-serif;
+}
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}

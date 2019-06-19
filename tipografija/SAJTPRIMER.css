@@ -1,0 +1,114 @@
+@font-face{
+    font-family: 'Great Vibes';
+    src: url(GreatVibes-Regular.ttf);
+}
+* {
+margin: 0;
+padding: 0;
+} 
+body{
+    font-family: 'Raleway',sans-serif;
+}
+header.wrapper, section.wrapper{
+margin: 0 auto;
+width: 1200px;
+    
+} 
+header{
+    height: 95px;
+}
+header img{
+    padding-top: 3px;
+    margin-left: 10px;
+
+}
+nav{
+    float: right;
+}
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+} 
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 36px;
+    margin-right: 102px
+}
+nav ul li a {
+    text-decoration: none;
+    color:#d18377;
+    font-family: 'Raleway' , sans-serif;
+
+}
+nav ul li a:hover{
+    color: #70888a;
+    border-bottom: 1px solid #70888a;
+
+}
+li :last-child{
+    margin-right: 20px;
+
+}
+#cover{
+    width: 100%;
+}
+.naslov{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    color: #d18377;
+    margin-top: 72px;
+    margin-bottom: 76px;
+    font-weight: normal;
+}
+.uvod{
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    font-size: 36px;
+    color: #70888a;
+    margin-bottom: 88px;
+}
+div.prvi{
+    margin-bottom: 130px;
+    overflow: hidden;
+}
+div.pr{
+    width: 360px;
+    margin: 0 20px 20px 20px;
+    float: left;
+}
+div.pr p{
+    font-size:20px;
+    color: #d18377;
+    margin-top: 20px;
+    font-style: italic; 
+}
+div.pr a{
+    color: #70888a;
+    font-size: 20px;
+    font-family: 'Raleway',sans-serif;
+    display: block;
+    text-align: left;
+}
+footer{
+    height: 60px;
+    background-color: #70888a;
+    width: 100%;
+    clear: both;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 23px;
+    font-family: 'Arial', sans-serif;
+}
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}
+
