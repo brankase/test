@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pariz</title>
+    <link rel="stylesheet" href="KONTAKT.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="col-12 col-s-12  wrapper">
+    <img class="logo" src="grb.png" alt="logo">
+      <nav class="nav">
+          <ul>
+              <li> <a href="PARIZ.html">GLAVNA</a> </li>
+              <li> <a href="ISK.html">ISKUSTVA</a> </li>
+              <li> <a href="kontakt.html">KONTAKT</a> </li>
+          </ul>
+      </nav>
+      <img class=" logo" src="pariz1.jpg" alt="logo"> 
+      <img class=" logo" src="zastava.png" alt="logo"> 
+   </header>
+   <div class="row ">
+   <h1 class="col-12 col-s-12 naslov">Posetite Pariz<br>Zakažite konsultacije</h1>
+
+   <form id="forma1" class=" col-6 col-s-3" >
+        <fieldset   >
+            <legend> <h1> Lični podaci</h1></legend>
+             
+                    <label for="ime">Ime i prezime*</label> <br>
+                    <input type="text" id="ime" name="ime"> <br> <br>
+
+                    <label for="datum" >Datum rodjenja</label> <br>
+                    <input type="date" id="datum" name="datum"> <br> <br>
+
+                    <label for="konsultacije">Vreme konsultacija:</label><br>
+                    <input type="text" id="konsultacije" name="konsultacije"> <br>
+
+                    <label for="mejl">E-mail:</label> <br>
+                    <input type="email" id="mejl" > <br> <br>
+
+                    <label for="url">Veb adresa</label> <br>
+                    <input type="url" name="url" id="url"
+                      placeholder="https://example.com"
+                      pattern="https://.*" size="30"
+                     required> <br>
+
+                     <label for="color">Omiljena boja</label> <br>
+                      <input type="color" id="color" name="color" value="#ff0000"> <br>
+
+                      <label for="godine">Godine</label> <br>
+                      <input type="number" name="quantity" min="15" max="100" step="1" id="godine"> <br>
+
+                      <label for="skala">Opseg cena u Eur</label> <br>
+                      <input type="range" id="skala" name="skala" min="1000" max="100000" step="10"> <br> <br>
+
+                      <label for="uname">Korisničko ime*</label><br>
+                      <input type="text" id="uname" name="uname"><br>
+
+                     <label for="lozinka">Šifra*:</label><br>
+                     <input type="password" id="lozinka" name="lozinka"> <br>
+
+                     <label for="progres">Progres</label> <br>
+                     <progress value="22" max="100" id="progres"></progress> <br>
+
+                     <label for="meter">Meter</label> <br>
+                     <meter form="form1" name="anna" min="0" low="40" high="90" max="100" value="95" id="meter"></meter> <br>
+
+                <label for="slika">Ubaci sliku</label> <br>
+                <input type="file" accept=".jpg" id="slika" name="slika"> <br> <br>
+
+                <label for="komentar">Napomena:</label> <br>
+                <textarea name="komentar" rows="10" cols="60" style="resize:none;" id="komentar">Unesite komentar...</textarea> <br> <br>
+
+                <input type="submit" id="submit" value="posalji" >
+                <input type="reset"  id="reset" value="ponistiti" >
+                </div>
+
+        </fieldset>
+    </form>
+    </div>
+<div class="row">
+   <footer class="col-12 col-s-12 " >
+    <p> JUL 2019. <br>
+        Kontakt informacije:
+       <a href="mailto:brankase@yahoo.com">brankase@yahoo.com</a>
+       </p>
+    </footer>
+   </div>
+</body>
+</html>
